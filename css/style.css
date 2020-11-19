@@ -42,10 +42,18 @@ ul {
   letter-spacing: 0.03em;
   color: var(--style-color);
 }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu {
+  padding-left: 93px;
   display: flex;
   font-family: "Roboto";
   font-style: normal;
@@ -54,6 +62,11 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--main-color);
+}
+.menu-page {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts {
   display: flex;
@@ -66,7 +79,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 .hero {
-  padding-top: 200px;  
+  padding-top: 200px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -92,7 +105,7 @@ ul {
   background: var(--style-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--white);  
+  color: var(--white);
 }
 .street {
   font-family: "Roboto";
@@ -103,13 +116,14 @@ ul {
   letter-spacing: 0.03em;
   color: var(--white);
 }
-.footer 
-{ background-color: var(--background);
+.footer {
+  background-color: var(--background);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .footer-logo {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer.contacts.item {
   font-family: "Roboto";
@@ -131,6 +145,8 @@ ul {
   color: var(--white);
 }
 .advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -155,6 +171,7 @@ ul {
   display: flex;
 }
 .worker-name {
+  display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -162,8 +179,11 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-align: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 .worker-job {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -171,12 +191,23 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-contacts);
   text-align: center;
+  padding-bottom: 30px;
 }
 .worker-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.activity {
+  padding-bottom: 94px;
 }
 .team.container li:not(:first-child) {
   margin-left: 30px;
@@ -202,12 +233,30 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
-  margin:0 auto;
+  margin: 0 auto;
+}
+.page-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.address-item {
+  margin-bottom: 9px;
+  margin-top: 9px;
 }
 .button-filter {
-  min-width: 73px;
-  height: 38px;
   border: none;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .container.filter.button li:not(:first-child) {
   padding-left: 30px;
@@ -250,20 +299,29 @@ button:focus {
   margin-right: 50px;
 }
 .address {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--color-contacts);
 }
-.line u li {
-  align-content: center;
-  margin-bottom: 94px;
+.address:not(:last-child) {
+  margin-bottom: 10px;
+}
+.button-panel {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.filter-button {
+  display: flex;
+  justify-content: center;
 }
 .container.filter.button {
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 56px;
+  justify-content: center; 
+}
+.filter-grid {
+  display: flex;
 }
 .container.filter.grid li {
   margin-bottom: 30px;
@@ -275,12 +333,14 @@ button:focus {
  margin-right: 0px;
 margin-bottom: 0px;
 }*/
-
+.grid-container {
+  padding-bottom: 94px;
+}
 .border {
   border-bottom-width: 1px;
   border-top-width: 0px;
   border-right-width: 0px;
   border-left-width: 0px;
   border-style: solid;
-  color: #ececec; 
+  color: #ececec;
 }

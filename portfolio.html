@@ -14,43 +14,40 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap">
     </head>
     <body>
-        <div class="main-container portfolio">
-            <!-- HEADER -->
-            <header class="header container portfolio">
-                <nav class="container">
-                    <div class="header container logo"><a class="link"
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container header-container">
+                <nav class="nav">
+                    <div class="logo"><a class="link"
                             href="./index.html"><span
                                 class="first-part-title">Web</span><span
                                 class="second-part-title">Studio</span></a>
                     </div>
-                    <ul class="menu header container">
-                        <li class="item menu-item"><a class="link menu-page"
+                    <ul class="menu">
+                        <li class="menu-item"><a class="menu-page"
                                 href="./index.html">Студия</a></li>
-                        <li class="item menu-item"><a class="link menu-page"
+                        <li class="menu-item"><a class="menu-page"
                                 href="./portfolio.html">Портфолио</a></li>
-                        <li class="item menu-item"><a class="link menu-page"
-                                href="">Контакты</a></li>
+                        <li class="menu-item"><a class="menu-page" href="">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="contacts">
-                    <ul class="header container">
-                        <li class="item menu-item address"><a class="link"
-                                href="mailto:info@devstudio.com">madgav@mail.ru</a></li>
-                        <li class="item menu-item address"><a class="link"
-                                href="tel:+380961111111">+38
-                                096 111 11
-                                11</a></li>
-                    </ul>
-                </div>
-            </header>
-        </div>
+                <ul class="contacts">
+                    <li class="item menu-item address"><a class="link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item menu-item address"><a class="link"
+                            href="tel:+380961111111">+38
+                            096 111 11
+                            11</a></li>
+                </ul>
+            </div>
+        </header>
         <div class="border"></div>
         <!-- панель вкладок -->
         <main>
-            <div class="main-container">
-                <section>
+            <div class="container">
+                <section class="button-panel">
                     <div>
-                        <ul class="container filter button">
+                        <ul class="filter-button">
                             <li>
                                 <button type="button" class="button-filter">Все</button>
                             </li>
@@ -71,9 +68,9 @@
                 </section>
             </div>
             <!-- преимущества -->
-            <section>
-                <div class="main-container container products">
-                    <ul class="container filter grid">
+            <section class="grid-container">
+                <div class="container">
+                    <ul class="filter-grid">
                         <div class="line">
                             <li class="cards">
                                 <img
@@ -145,32 +142,33 @@
                             </li>
                         </ul>
                     </div>
-                </section>
+                    <div>
+                    </section>               
             </main>
-            <!-- FOOTER -->
-            <footer class="footer header container">
-                <div class="main-container">
-                    <ul>
-                        <li> <a class="footer-logo link" href="./index.html"><span
-                                    class="first-part-title">Web</span><span
-                                    class="second-logo-part-footer">Studio</span></a></li>
-                        <li>
-                            <address class="street" href="">г. Киев, пр-т Леси
-                                Украинки,
-                                26</address>
-                        </li>
-                        <li>
-                            <a class="address"
-                                href="mailtoL:info@example.com">info@example.com</a>
-                        </li>
-                        <li>
-                            <a class="address"
-                                href="tel:+380991111111">+38
-                                099
-                                111 11 11</a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
+             <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <ul>
+                    <li> <a class="footer-logo link" href="./index.html"><span
+                                class="first-part-title">Web</span><span
+                                class="second-logo-part-footer">Studio</span></a></li>
+                    <li>
+                        <address class="street" href="">г. Киев, пр-т Леси
+                            Украинки,
+                            26</address>
+                    </li>
+                    <li class="address-item">
+                        <a class="address"
+                            href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li>
+                        <a class="address"
+                            href="tel:+380991111111">+38
+                            099
+                            111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
         </body>
     </html>
