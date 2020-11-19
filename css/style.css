@@ -9,6 +9,10 @@
   margin: 0;
   padding: 0;
 }
+img {
+  margin: 0px;
+  padding: 0px;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -163,9 +167,10 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-contacts);
 }
-.advantages li:not(:last-child) {
+.advantages li:nth-child(n + 1) {
   margin-left: 30px;
 }
+
 .advantages-list {
   display: flex;
 }
@@ -238,6 +243,14 @@ ul {
 .page-title {
   margin-bottom: 50px;
   text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 .address-item {
   margin-bottom: 9px;
@@ -259,7 +272,7 @@ ul {
   letter-spacing: 0.03em;
 }
 .button-block:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 8px;
 }
 .button:focus,
 button:hover {
@@ -282,8 +295,8 @@ button:focus {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  text-align: center;
   color: var(--background);
+  margin-top: 20px;
 }
 .card-legend {
   font-family: "Roboto";
@@ -292,9 +305,9 @@ button:focus {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  text-align: center;
   color: var(--color-contacts);
-}
+  }
+
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -316,16 +329,36 @@ button:focus {
 .filter-button {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 .filter-grid {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.filter-grid li:nth-child(3n) {
+.cards {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+.cards:nth-child(3) {
   margin-right: 0px;
+}
+.cards:nth-child(6) {
+  margin-right: 0px;
+}
+.cards:nth-child(9) {
+  margin-right: 0px;
+}
+.cards:nth-child(7) {
   margin-bottom: 0px;
-  }
+}
+.cards:nth-child(8) {
+  margin-bottom: 0px;
+}
+.cards:nth-child(9) {
+  margin-bottom: 0px;
+}
 .grid-container {
   padding-bottom: 94px;
 }
