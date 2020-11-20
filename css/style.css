@@ -4,6 +4,7 @@
   --background: #2f303a;
   --white: #ffffff;
   --color-contacts: #757575;
+  --card-border-color: #EEEEEE;
 }
 * {
   margin: 0;
@@ -167,7 +168,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-contacts);
 }
-.advantages li:nth-child(n + 1) {
+.advantages li:nth-child(n + 2) {
   margin-left: 30px;
 }
 
@@ -339,7 +340,8 @@ button:focus {
 }
 .cards {
   margin-bottom: 30px;
-  margin-right: 30px;
+  margin-right: 25px;
+  border: 1px solid var(--card-border-color);
 }
 .cards:nth-child(3) {
   margin-right: 0px;
