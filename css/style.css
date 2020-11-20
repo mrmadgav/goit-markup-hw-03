@@ -372,3 +372,8 @@ button:focus {
   border-style: solid;
   color: #ececec;
 }
+.card-container-info {
+  padding-right: 24px;
+  padding-left: 24px;
+  
+}
